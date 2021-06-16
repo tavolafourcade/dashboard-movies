@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './assets/css/app.css';
+import SideBar from './components/SideBar';
+import ContentWrapper from './components/ContentWrapper';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div id="wrapper">
+      <SideBar/>
+      <ContentWrapper/>
+    </div>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
